@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pbf-mk-rQz">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YQP-fh-pqj">
+            <objects>
+                <navigationController id="pbf-mk-rQz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="76G-P1-fFH">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DhC-eo-9eK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pW9-jd-Tt2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="87"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BinaryVeda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA2-JR-oX3">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-rw-rxO" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="3580"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CombinedShapeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fal-dY-MTh">
+                                                <rect key="frame" x="25" y="25" width="212" height="77"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="621-RM-foK">
+                                                <rect key="frame" x="94.666666666666671" y="3413" width="238.66666666666663" height="25"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invalidName" translatesAutoresizingMaskIntoConstraints="NO" id="T63-sm-z7P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="25"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Copyright Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTb-Rj-OS5">
+                                                        <rect key="frame" x="33.999999999999986" y="0.0" width="204.66666666666663" height="25"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="OTb-Rj-OS5" firstAttribute="centerY" secondItem="T63-sm-z7P" secondAttribute="centerY" id="lMz-DH-CMi"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5l-8d-Af4">
+                                                <rect key="frame" x="28" y="3402" width="372" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="ogz-ah-saS"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="4uh-2d-2dg">
+                                                <rect key="frame" x="57.666666666666657" y="3287" width="312.66666666666674" height="85"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iMX-Qs-f3R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="85"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLj-uD-i9U">
+                                                                <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="15"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-Gj-7eW">
+                                                                <rect key="frame" x="0.0" y="35" width="111.33333333333333" height="15"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach Us." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opf-Xh-xAI">
+                                                                <rect key="frame" x="0.0" y="70" width="111.33333333333333" height="15"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U86-HZ-szG">
+                                                        <rect key="frame" x="201.33333333333334" y="0.0" width="111.33333333333334" height="85"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Affiliations." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-q1-8rn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="15"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suq-wt-YDK">
+                                                                <rect key="frame" x="0.0" y="35" width="111.33333333333333" height="15"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igt-79-fUL">
+                                                                <rect key="frame" x="0.0" y="70" width="111.33333333333333" height="15"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="U86-HZ-szG" firstAttribute="leading" secondItem="4uh-2d-2dg" secondAttribute="leading" constant="201.33333333333337" id="csj-Bs-39L"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="combinedShape" translatesAutoresizingMaskIntoConstraints="NO" id="MtG-JV-jMK">
+                                                <rect key="frame" x="20" y="3239" width="388" height="28"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdi-x9-ScQ">
+                                                <rect key="frame" x="28" y="3218" width="372" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="WD5-x3-EV3"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group301Copy" translatesAutoresizingMaskIntoConstraints="NO" id="2SK-YI-IDn">
+                                                <rect key="frame" x="0.0" y="112" width="428" height="343"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="343" id="9de-Dr-tYA"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-8R-yiM">
+                                                <rect key="frame" x="50" y="485" width="328" height="55"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="FMa-QH-woK"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Y8o-2b-1F5">
+                                                <rect key="frame" x="80.333333333333343" y="570" width="267.33333333333326" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1G-Ju-TrF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="40"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="22"/>
+                                                        <inset key="contentEdgeInsets" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
+                                                        <state key="normal" title=" register" image="group3Copy"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="registerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-T4-pib"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="me as a collector" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhN-MA-Aih">
+                                                        <rect key="frame" x="122.00000000000001" y="0.0" width="145.33333333333337" height="40"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Tug-zd-lQg"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw5-KZ-RqQ">
+                                                <rect key="frame" x="107.66666666666669" y="640" width="213" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="IZQ-PM-Cw0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                <inset key="contentEdgeInsets" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
+                                                <state key="normal" title="  track my application" image="group3Copy3"/>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="i3m-Yk-sbn">
+                                                <rect key="frame" x="40" y="730" width="348" height="247"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-qP-np3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="144"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="qtq-QF-cEm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="91" height="95"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dW-3H-3RM">
+                                                                <rect key="frame" x="0.0" y="110" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="Ekj-nn-g50"/>
+                                                            <constraint firstAttribute="trailing" secondItem="4dW-3H-3RM" secondAttribute="trailing" id="QPu-9d-Jl9"/>
+                                                            <constraint firstItem="4dW-3H-3RM" firstAttribute="leading" secondItem="7fZ-qP-np3" secondAttribute="leading" id="vD0-4b-CAK"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqC-dC-lUG">
+                                                        <rect key="frame" x="0.0" y="159" width="344.66666666666669" height="88"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rfc-c3-ZbX">
+                                                <rect key="frame" x="40" y="1027" width="348" height="234"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aH3-ih-ewc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="131"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group2" translatesAutoresizingMaskIntoConstraints="NO" id="CdE-CL-aXH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="82"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRF-xp-6lC">
+                                                                <rect key="frame" x="0.0" y="97" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Wqg-EA-4JA"/>
+                                                            <constraint firstItem="VRF-xp-6lC" firstAttribute="leading" secondItem="aH3-ih-ewc" secondAttribute="leading" id="ZuY-cF-VWB"/>
+                                                            <constraint firstAttribute="width" constant="120" id="iLk-Gu-7ga"/>
+                                                            <constraint firstAttribute="trailing" secondItem="VRF-xp-6lC" secondAttribute="trailing" id="v46-kx-T6K"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6T-U1-A4Y">
+                                                        <rect key="frame" x="0.0" y="146" width="344.66666666666669" height="88"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Tnm-8t-ksJ">
+                                                <rect key="frame" x="40" y="1311" width="348" height="250"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SWL-b0-cpx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="129"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group4" translatesAutoresizingMaskIntoConstraints="NO" id="0DZ-Uv-d0A">
+                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="80"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-92-oLv">
+                                                                <rect key="frame" x="0.0" y="95" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ZD2-92-oLv" firstAttribute="leading" secondItem="SWL-b0-cpx" secondAttribute="leading" id="2UN-m6-OKu"/>
+                                                            <constraint firstAttribute="width" constant="120" id="R3d-Sr-UQe"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="a6D-kV-P3k"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZD2-92-oLv" secondAttribute="trailing" id="i0t-Xh-Pnq"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-D0-nBD">
+                                                        <rect key="frame" x="0.0" y="144" width="344.66666666666669" height="106"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jEO-cS-8up">
+                                                <rect key="frame" x="40" y="1611" width="348" height="247"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aTN-iH-n38">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="126"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group14Copy2" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-yC-jdH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="77"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-V9-SbP">
+                                                                <rect key="frame" x="0.0" y="92" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="vrH-V9-SbP" secondAttribute="trailing" id="0kT-YI-FGz"/>
+                                                            <constraint firstItem="vrH-V9-SbP" firstAttribute="leading" secondItem="aTN-iH-n38" secondAttribute="leading" id="MaV-6q-Izq"/>
+                                                            <constraint firstAttribute="width" constant="120" id="T9c-OF-MnO"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="lgX-Wo-B2G"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf7-hI-VDv">
+                                                        <rect key="frame" x="0.0" y="141" width="344.66666666666669" height="106"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ccJ-UU-H9d">
+                                                <rect key="frame" x="40" y="1908" width="348" height="250"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vly-dA-b9e">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="129"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group7" translatesAutoresizingMaskIntoConstraints="NO" id="Kgf-BR-Pff">
+                                                                <rect key="frame" x="0.0" y="0.0" width="84" height="80"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsH-9G-KiB">
+                                                                <rect key="frame" x="0.0" y="95" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="1hp-Ea-aLS"/>
+                                                            <constraint firstAttribute="width" constant="120" id="Wk7-B5-Hk4"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AsH-9G-KiB" secondAttribute="trailing" id="vqx-VR-OKs"/>
+                                                            <constraint firstItem="AsH-9G-KiB" firstAttribute="leading" secondItem="vly-dA-b9e" secondAttribute="leading" id="z8N-dd-N02"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-Nb-lhQ">
+                                                        <rect key="frame" x="0.0" y="144" width="344.66666666666669" height="106"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-gC-UYC">
+                                                <rect key="frame" x="40" y="2208" width="348" height="270"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VQw-vV-F6y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="113"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group10" translatesAutoresizingMaskIntoConstraints="NO" id="TOa-A0-Bf6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oK-Fb-ZlM">
+                                                                <rect key="frame" x="0.0" y="79" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="2Gf-Po-LOh"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="2ft-Hu-E4l"/>
+                                                            <constraint firstItem="0oK-Fb-ZlM" firstAttribute="leading" secondItem="VQw-vV-F6y" secondAttribute="leading" id="EQg-Kg-2vh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="0oK-Fb-ZlM" secondAttribute="trailing" id="cSg-JQ-mfg"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j5-Tc-CzR">
+                                                        <rect key="frame" x="0.0" y="128" width="348" height="142"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2cn-tk-Is7">
+                                                <rect key="frame" x="40" y="2528" width="348" height="239"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1ta-xr-HNO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="118"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group14" translatesAutoresizingMaskIntoConstraints="NO" id="YSS-hO-kiX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="36" height="69"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-zg-3UB">
+                                                                <rect key="frame" x="0.0" y="84" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="6n5-ul-912"/>
+                                                            <constraint firstItem="1i2-zg-3UB" firstAttribute="leading" secondItem="1ta-xr-HNO" secondAttribute="leading" id="EEu-j4-XoO"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="VEl-Wv-D82"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1i2-zg-3UB" secondAttribute="trailing" id="eY5-17-8ym"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-q0-Q7B">
+                                                        <rect key="frame" x="0.0" y="133" width="344.66666666666669" height="106"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xGh-DI-mwP">
+                                                <rect key="frame" x="40" y="2817" width="348" height="286"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6P4-Dh-hef">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="129"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group15" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-iG-Q7M">
+                                                                <rect key="frame" x="0.0" y="0.0" width="44" height="80"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum is used" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-SH-DPp">
+                                                                <rect key="frame" x="0.0" y="95" width="120" height="34"/>
+                                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="hcY-SH-DPp" secondAttribute="trailing" id="6oc-Sh-jtH"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Hpg-Ma-VJc"/>
+                                                            <constraint firstItem="hcY-SH-DPp" firstAttribute="leading" secondItem="6P4-Dh-hef" secondAttribute="leading" id="el6-vG-lCj"/>
+                                                            <constraint firstAttribute="width" constant="120" id="nGN-zm-g6j"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WU-Ld-RyN">
+                                                        <rect key="frame" x="0.0" y="144" width="348" height="142"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook" translatesAutoresizingMaskIntoConstraints="NO" id="ADJ-vt-VIi">
+                                                <rect key="frame" x="161.66666666666666" y="3153" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ADJ-vt-VIi" secondAttribute="height" id="32e-Ge-CTu"/>
+                                                    <constraint firstAttribute="height" constant="45" id="nLr-US-zAw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram" translatesAutoresizingMaskIntoConstraints="NO" id="YCp-WJ-wV7">
+                                                <rect key="frame" x="221.66666666666666" y="3153" width="44.999999999999972" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="HIb-Lg-zhR"/>
+                                                    <constraint firstAttribute="width" secondItem="YCp-WJ-wV7" secondAttribute="height" id="s8V-8U-Gg1"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ccJ-UU-H9d" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="1b1-PK-Dy3"/>
+                                            <constraint firstItem="Rfc-c3-ZbX" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="2VF-dI-xbW"/>
+                                            <constraint firstAttribute="trailing" secondItem="mdi-x9-ScQ" secondAttribute="trailing" constant="28" id="5Nv-cN-9Fk"/>
+                                            <constraint firstItem="4uh-2d-2dg" firstAttribute="top" secondItem="MtG-JV-jMK" secondAttribute="bottom" constant="20" id="6l9-pI-dAU"/>
+                                            <constraint firstItem="MtG-JV-jMK" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="20" id="7vs-oe-kZ3"/>
+                                            <constraint firstItem="4uh-2d-2dg" firstAttribute="centerX" secondItem="rUv-rw-rxO" secondAttribute="centerX" id="9Ns-Zu-xhf"/>
+                                            <constraint firstItem="mdi-x9-ScQ" firstAttribute="top" secondItem="ADJ-vt-VIi" secondAttribute="bottom" constant="20" id="BEN-vL-IIb"/>
+                                            <constraint firstAttribute="trailing" secondItem="MtG-JV-jMK" secondAttribute="trailing" constant="20" id="Cem-mb-UXu"/>
+                                            <constraint firstItem="ADJ-vt-VIi" firstAttribute="centerX" secondItem="rUv-rw-rxO" secondAttribute="centerX" constant="-30" id="E6f-X2-uRk"/>
+                                            <constraint firstItem="Y8o-2b-1F5" firstAttribute="centerX" secondItem="rUv-rw-rxO" secondAttribute="centerX" id="E8M-go-Pcj"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="C5l-8d-Af4" secondAttribute="trailing" constant="20" id="EcN-IC-Zf1"/>
+                                            <constraint firstItem="Tnm-8t-ksJ" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="EwW-UD-od0"/>
+                                            <constraint firstItem="xGh-DI-mwP" firstAttribute="top" secondItem="2cn-tk-Is7" secondAttribute="bottom" constant="50" id="IDb-cq-ESz"/>
+                                            <constraint firstItem="621-RM-foK" firstAttribute="centerX" secondItem="rUv-rw-rxO" secondAttribute="centerX" id="ITt-N6-8px"/>
+                                            <constraint firstAttribute="trailing" secondItem="jEO-cS-8up" secondAttribute="trailing" constant="40" id="LAH-29-6rP"/>
+                                            <constraint firstAttribute="trailing" secondItem="2SK-YI-IDn" secondAttribute="trailing" id="M0j-Nc-nRQ"/>
+                                            <constraint firstItem="2cn-tk-Is7" firstAttribute="top" secondItem="VHz-gC-UYC" secondAttribute="bottom" constant="50" id="NEV-xL-BPM"/>
+                                            <constraint firstItem="YCp-WJ-wV7" firstAttribute="centerX" secondItem="rUv-rw-rxO" secondAttribute="centerX" constant="30" id="PUZ-CL-3kt"/>
+                                            <constraint firstAttribute="trailing" secondItem="VHz-gC-UYC" secondAttribute="trailing" constant="40" id="PoZ-Zr-d2b"/>
+                                            <constraint firstItem="YCp-WJ-wV7" firstAttribute="top" secondItem="xGh-DI-mwP" secondAttribute="bottom" constant="50" id="Ptu-LX-y9u"/>
+                                            <constraint firstAttribute="trailing" secondItem="2cn-tk-Is7" secondAttribute="trailing" constant="40" id="TjO-dA-4XB"/>
+                                            <constraint firstAttribute="trailing" secondItem="ccJ-UU-H9d" secondAttribute="trailing" constant="40" id="Tvo-2I-cF4"/>
+                                            <constraint firstItem="ccJ-UU-H9d" firstAttribute="top" secondItem="jEO-cS-8up" secondAttribute="bottom" constant="50" id="VoY-ay-9yz"/>
+                                            <constraint firstAttribute="height" constant="3580" id="W3c-BT-gpS"/>
+                                            <constraint firstItem="Rfc-c3-ZbX" firstAttribute="top" secondItem="i3m-Yk-sbn" secondAttribute="bottom" constant="50" id="XL1-1w-Wcr"/>
+                                            <constraint firstItem="dw5-KZ-RqQ" firstAttribute="centerX" secondItem="rUv-rw-rxO" secondAttribute="centerX" id="XzK-wy-qdU"/>
+                                            <constraint firstItem="2SK-YI-IDn" firstAttribute="top" secondItem="fal-dY-MTh" secondAttribute="bottom" constant="10" id="ZQ9-C1-eql"/>
+                                            <constraint firstItem="fal-dY-MTh" firstAttribute="top" secondItem="rUv-rw-rxO" secondAttribute="top" constant="25" id="Zeq-0A-q7u"/>
+                                            <constraint firstItem="2SK-YI-IDn" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" id="aZh-Sf-HN8"/>
+                                            <constraint firstItem="C5l-8d-Af4" firstAttribute="top" secondItem="4uh-2d-2dg" secondAttribute="bottom" constant="30" id="aul-Ml-SXf"/>
+                                            <constraint firstItem="xGh-DI-mwP" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="cIx-v0-5es"/>
+                                            <constraint firstItem="621-RM-foK" firstAttribute="top" secondItem="C5l-8d-Af4" secondAttribute="bottom" constant="10" id="d3R-j0-qZ9"/>
+                                            <constraint firstAttribute="trailing" secondItem="xGh-DI-mwP" secondAttribute="trailing" constant="40" id="eew-HX-6tq"/>
+                                            <constraint firstAttribute="trailing" secondItem="i3m-Yk-sbn" secondAttribute="trailing" constant="40" id="esb-0J-aLB"/>
+                                            <constraint firstItem="Y8o-2b-1F5" firstAttribute="top" secondItem="kf5-8R-yiM" secondAttribute="bottom" constant="30" id="ezp-Cr-SBg"/>
+                                            <constraint firstItem="2cn-tk-Is7" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="g37-Vo-dCI"/>
+                                            <constraint firstItem="fal-dY-MTh" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="25" id="gYi-Bi-fZB"/>
+                                            <constraint firstItem="VHz-gC-UYC" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="ghF-qb-gqB"/>
+                                            <constraint firstItem="dw5-KZ-RqQ" firstAttribute="top" secondItem="Y8o-2b-1F5" secondAttribute="bottom" constant="30" id="jes-ah-yoQ"/>
+                                            <constraint firstItem="mdi-x9-ScQ" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="28" id="kog-WO-Cah"/>
+                                            <constraint firstItem="MtG-JV-jMK" firstAttribute="top" secondItem="mdi-x9-ScQ" secondAttribute="bottom" constant="20" id="lyT-Id-qyP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rfc-c3-ZbX" secondAttribute="trailing" constant="40" id="nyD-8B-rmp"/>
+                                            <constraint firstItem="C5l-8d-Af4" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leadingMargin" constant="20" id="oIE-92-UFV"/>
+                                            <constraint firstItem="jEO-cS-8up" firstAttribute="top" secondItem="Tnm-8t-ksJ" secondAttribute="bottom" constant="50" id="pO0-Ef-dha"/>
+                                            <constraint firstItem="i3m-Yk-sbn" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="qgh-6U-WX8"/>
+                                            <constraint firstItem="i3m-Yk-sbn" firstAttribute="top" secondItem="dw5-KZ-RqQ" secondAttribute="bottom" constant="50" id="rB2-pB-OhJ"/>
+                                            <constraint firstItem="VHz-gC-UYC" firstAttribute="top" secondItem="ccJ-UU-H9d" secondAttribute="bottom" constant="50" id="rX2-f5-WdB"/>
+                                            <constraint firstItem="kf5-8R-yiM" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="50" id="rqx-77-nJs"/>
+                                            <constraint firstItem="kf5-8R-yiM" firstAttribute="top" secondItem="2SK-YI-IDn" secondAttribute="bottom" constant="30" id="sXQ-Lf-Oho"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tnm-8t-ksJ" secondAttribute="trailing" constant="40" id="vga-9J-8Qo"/>
+                                            <constraint firstItem="Tnm-8t-ksJ" firstAttribute="top" secondItem="Rfc-c3-ZbX" secondAttribute="bottom" constant="50" id="y1M-og-MzI"/>
+                                            <constraint firstItem="mdi-x9-ScQ" firstAttribute="top" secondItem="YCp-WJ-wV7" secondAttribute="bottom" constant="20" id="yYL-mW-74V"/>
+                                            <constraint firstAttribute="trailing" secondItem="kf5-8R-yiM" secondAttribute="trailing" constant="50" id="z7i-Sj-CqB"/>
+                                            <constraint firstItem="jEO-cS-8up" firstAttribute="leading" secondItem="rUv-rw-rxO" secondAttribute="leading" constant="40" id="z81-yk-Xlq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rUv-rw-rxO" secondAttribute="trailing" id="9Cw-7R-ksS"/>
+                                    <constraint firstItem="rUv-rw-rxO" firstAttribute="leading" secondItem="hA2-JR-oX3" secondAttribute="leading" id="KBm-Tf-OV9"/>
+                                    <constraint firstAttribute="bottom" secondItem="rUv-rw-rxO" secondAttribute="bottom" id="tVr-hO-7zi"/>
+                                    <constraint firstItem="rUv-rw-rxO" firstAttribute="top" secondItem="hA2-JR-oX3" secondAttribute="top" id="yWb-Oi-ivz"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rUv-rw-rxO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wug-X6-V36"/>
+                            <constraint firstItem="hA2-JR-oX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YHl-xK-nUl"/>
+                            <constraint firstItem="hA2-JR-oX3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iHR-iq-QdQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hA2-JR-oX3" secondAttribute="bottom" id="yIy-MI-Ot2"/>
+                            <constraint firstItem="hA2-JR-oX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zjw-2d-pQO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ay3-ph-T9n"/>
+                    <connections>
+                        <outlet property="registerButton" destination="rUv-rw-rxO" id="YfO-GX-Qq4"/>
+                        <outlet property="trackButton" destination="dw5-KZ-RqQ" id="Bd5-7N-smZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.307692307692307" y="87.440758293838854"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="GYL-q1-LbZ">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="NuZ-wC-Sjf" customClass="ProfileViewController" customModule="BinaryVeda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ig-5Y-dmD">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3mf-Qr-Ct3">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="34C-5w-qHj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="34C-5w-qHj" firstAttribute="trailing" secondItem="3mf-Qr-Ct3" secondAttribute="trailing" id="1qu-AL-gtS"/>
+                            <constraint firstItem="3mf-Qr-Ct3" firstAttribute="top" secondItem="34C-5w-qHj" secondAttribute="top" id="CqU-fw-aPg"/>
+                            <constraint firstItem="3mf-Qr-Ct3" firstAttribute="leading" secondItem="34C-5w-qHj" secondAttribute="leading" id="Jdx-RG-Pwu"/>
+                            <constraint firstItem="34C-5w-qHj" firstAttribute="bottom" secondItem="3mf-Qr-Ct3" secondAttribute="bottom" id="xrz-uE-0qf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3mf-Qr-Ct3" id="qlA-Md-m04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkd-Gj-IXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CombinedShapeLogo" width="212" height="77"/>
+        <image name="Facebook" width="33" height="32"/>
+        <image name="Instagram" width="32" height="32"/>
+        <image name="combinedShape" width="255" height="28"/>
+        <image name="group" width="91" height="95"/>
+        <image name="group10" width="74" height="64"/>
+        <image name="group14" width="36" height="69"/>
+        <image name="group14Copy2" width="75" height="77"/>
+        <image name="group15" width="44" height="80"/>
+        <image name="group2" width="50" height="82"/>
+        <image name="group301Copy" width="374.66665649414062" height="329"/>
+        <image name="group3Copy" width="20" height="18"/>
+        <image name="group3Copy3" width="12" height="11"/>
+        <image name="group4" width="78" height="80"/>
+        <image name="group7" width="84" height="80"/>
+        <image name="invalidName" width="24" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
